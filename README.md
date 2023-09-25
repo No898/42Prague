@@ -24,6 +24,8 @@ C Piscine Rush 01 - not participate </br>
 C Piscine Rush 02 - not participate </br>
 C Piscine BSQ - not participate </br>
 
+
+100% succeeded mean it passed by 42 moulinette
 tips and more soon </br>
 
 C Piscine Exam 00 </br>
