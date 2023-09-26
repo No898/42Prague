@@ -26,7 +26,7 @@ C Piscine Rush 02 - not participate </br>
 C Piscine BSQ - not participate </br>
 
 
-succeeded mean it passed by 42 moulinette
+Succeeded mean it passed by 42 moulinette</br>
 tips and more soon </br>
 
 C Piscine Exam 00 </br>
