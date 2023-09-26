@@ -27,7 +27,6 @@ C Piscine BSQ - not participate </br>
 
 
 Succeeded mean it passed by 42 moulinette</br>
-tips and more soon </br>
 
 C Piscine Exam 00 </br>
 C Piscine Exam 01 </br>
