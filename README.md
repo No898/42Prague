@@ -1,7 +1,7 @@
 # 42Prague
 Piscine September2023</br>
 4.9.2023 - 29.9.2023 </br>
-**This repository is just for my purpose and i dont recommend to use it or share it.**
+**This repository is just for my onw purpose and i dont recommend to use it or share it.**
 
 C Piscine Shell 00 - succeeded 100 % </br>
 C Piscine Shell 01 - succeeded 100 % </br>
