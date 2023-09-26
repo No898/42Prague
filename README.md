@@ -6,7 +6,7 @@ C Piscine Shell 00 - succeeded 100 % </br>
 C Piscine Shell 01 - succeeded 100 % </br>
 C Piscine C 00 - succeeded 100 % </br>
 C Piscine C 01 - succeeded 100 % </br>
-C Piscine C 02 - succeeded  xx % working on </br>
+C Piscine C 02 - succeeded  85 % </br>
 C Piscine C 03 - succeeded 100 % </br>
 C Piscine C 04 - succeeded  xx % working on </br>
 C Piscine C 05 - succeeded  xx % working on </br>
