@@ -6,7 +6,7 @@
 /*   By: todinh <todinh@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 16:24:50 by todinh            #+#    #+#             */
-/*   Updated: 2023/09/14 17:51:33 by todinh           ###   ########.fr       */
+/*   Updated: 2023/09/26 12:56:27 by todinh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,34 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_putstr_non_printable(char *str)
+void	ft_convert_hexa(unsigned char c)
 {
-	int		i;
 	char	*hex;
 
 	hex = "0123456789abcdef";
-	i = 0;
-	while (str[i])
+	if (c / 16 > 0)
 	{
-		if (((str[i] >= 0) && (str[i] <= 31)) || str[i] == 127)
+		ft_putchar(hex[c / 16]);
+		ft_putchar(hex[c % 16]);
+	}
+	else
+	{
+		ft_putchar('0');
+		ft_putchar(hex[c]);
+	}
+}
+
+void	ft_putstr_non_printable(char *str)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] < 32 || str[i] > 126)
 		{
 			ft_putchar('\\');
-			ft_putchar(hex[(unsigned char)str[i] / 16]);
-			ft_putchar(hex[(unsigned char)str[i] % 16]);
+			ft_convert_hexa(str[i]);
 		}
 		else
 		{
