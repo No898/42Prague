@@ -6,38 +6,50 @@
 /*   By: todinh <todinh@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 14:55:56 by todinh            #+#    #+#             */
-/*   Updated: 2023/09/25 15:10:22 by todinh           ###   ########.fr       */
+/*   Updated: 2023/09/26 14:08:55 by todinh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned	int	ft_strlcpy(char *dest, const char *src, unsigned int size)
-{
-	unsigned int	i;
-	unsigned int	c;
+#include <stdlib.h>
 
-	i = 0;
-	c = 0;
-	while (src[c])
-		c++;
-	if (size < 1)
-		return (c);
-	while (src[i] && i < size - 1)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+{
+	unsigned int	index;
+	unsigned int	lenght;
+
+	index = 0;
+	lenght = 0;
+	while (src[lenght])
 	{
-		dest[i] = src[i];
-		i++;
+		lenght++;
 	}
-	dest[i] = '\0';
-	return (c);
+	if (size <= 0 || dest == NULL)
+	{
+		return (lenght);
+	}
+	while (src[index] && index < size - 1)
+	{
+		dest[index] = src[index];
+		++index;
+	}
+	dest[index] = '\0';
+	return (lenght);
 }
 
 /*
 #include <stdio.h>
-int main(void)
-{
-	char src[] = "Turtle soup is healthy!";
-	char dest [100];
+unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
 
-	unsigned int butter = ft_strlcpy(dest, src, sizeof(dest));
-	printf("Lengh: %u \nand\nText: %s\n", butter, dest);
+int main() {
+    char src[] = "Turtle soup isnt soup.";
+    char dest[15];
+
+    unsigned int result = ft_strlcpy(dest, src, 15);
+    
+    printf("Source: %s\n", src);
+    printf("Destination: %s\n", dest);
+    printf("Length of the copied string: %u\n", result);
+    
+    return 0;
 }
-*/ 
+*/
