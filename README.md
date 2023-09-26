@@ -1,6 +1,7 @@
 # 42Prague
 Piscine September2023
 4.9.2023 - 29.9.2023
+This repository is just for my purpose and i dont recommend to use it or share it.
 
 C Piscine Shell 00 - succeeded 100 % </br>
 C Piscine Shell 01 - succeeded 100 % </br>
@@ -25,7 +26,7 @@ C Piscine Rush 02 - not participate </br>
 C Piscine BSQ - not participate </br>
 
 
-100% succeeded mean it passed by 42 moulinette
+succeeded mean it passed by 42 moulinette
 tips and more soon </br>
 
 C Piscine Exam 00 </br>
